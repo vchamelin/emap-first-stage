@@ -1,0 +1,270 @@
+$times-font-family: 'Times New Roman', Times, serif;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+
+.list-s-t-none{
+    position: absolute;
+    list-style-type: none;
+    z-index: 1;
+    padding: 8rem 0rem 0rem 5rem;
+    a {
+        text-decoration:none;
+        font-size: 2.5rem;
+        color: $text-nav-color;
+    }
+}
+ 
+.nav-list{
+    display: flex;
+    align-items: flex-start;
+    li {
+        padding: 1.5rem;
+        a{
+            font-family: $times-font-family
+
+        }
+    }
+}
+
+.main-topic{
+    position: relative;
+    left: 0rem;
+    top: 0rem;
+    width: 100%;
+    height: auto;
+    background-image: url($bg-img-main);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45rem 5rem 16rem 5rem;
+    border: 0px;
+    border-radius: 0rem 65% 65% 0rem;
+    h2{
+        width: 80rem;
+        color:#D9D9DA;
+        font-size: 5rem;
+        text-align: center;
+        font-weight: lighter;
+        
+    }
+    button{
+        margin-top: 8rem;
+        border: 1px solid #808080;
+        background:transparent;
+        cursor: pointer;
+        padding: 2rem 4rem;
+        color: #808080;
+        font-size: 1.5rem;
+    }
+}
+
+@each $name, $var in (1:$img-item-look-1 ,2:$img-item-look-2,3:$img-item-look-3){
+    .item-look-#{$name}{
+        content: url("../img/#{$var}");
+        width: 29rem;
+        height: auto;
+        min-width: 29rem;
+        max-height: 35rem;
+        object-fit:cover;
+    }
+}
+
+.look-at-out{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 5rem;
+        font-weight: 100;
+        padding: 6rem;
+        align-items: center;
+    }
+    .items-look{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .item-look {
+            display: flex;
+            box-shadow: 0rem 0rem 1rem 0rem rgba(61, 55, 61, 0.7);
+            margin: 3rem;
+
+            .item-text {
+                display: flex;
+                flex-direction: column;
+                padding: 4rem 3rem;
+                align-items: center;
+
+                h3{
+                    font-size: 4rem;
+                    color:$item-text-h3-color;
+                    font-weight: 100;
+                    text-align: center;
+                }
+                p {
+                    font-size: 2rem;
+                    font-family: $times-font-family;
+                    color: $item-text-p-color;
+                }
+            }
+        }
+    }
+}
+
+@each $var in "man","woman","woman2"{
+    .portret-review-#{$var}{
+        content: url("../img/#{$var}.jpg");
+        width: 9.5rem;
+        height: 9.5rem;
+        image-rendering: optimizeSpeed;
+        border-radius: 100%;
+    }
+}
+
+.reviews{
+    margin-top: 1rem;
+    width: 84%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);    
+    background-color: $bg-your-reviews-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    h2{
+        color: #CBA2B0;
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    .items-review{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .item-review{
+            display: flex;
+            flex-direction: row;
+            background-color: $text-bg-twit-review-color;
+            margin: 1rem;
+            padding: 1rem;
+            height: auto;
+            align-items: center;
+
+            p {
+                color: #FFFFFF;
+                padding: 0rem 3.5rem 0rem 3.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
+
+.find-your{
+    width: 52%;
+    position: relative;
+    top:4rem;
+    left: 50%;
+    transform: translate(-50%, 0%); 
+    background-color: $bg-find-your-own-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        align-items: center;
+        padding-top: 4.5rem;
+        font-size: 3rem;
+        color:$text-h2-find-your-own-color;
+        font-weight:lighter ;
+    }
+    form{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0rem 10%;
+        select, input {
+            padding: 1rem;
+            margin: 1rem 1rem;
+            border: 0;
+            border-bottom: 0.1rem solid $line-find-your-own-color;
+            background:transparent;
+            cursor: pointer;
+            color: $line-find-your-own-color;
+        }
+    }
+}
+
+
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 10rem;
+    padding: 2.5rem 4rem;
+    font-size: 1.5rem;
+    background-color: $bg-footer-color;
+    .footer-item {
+        ul {
+            list-style-type: none;
+            color:$text-li-footer-color;
+            li {
+                font-family: $times-font-family;
+                padding: 0rem 0rem 0.5rem 2rem;
+                
+            }
+        }
+        img {
+            width: 4rem;
+            margin: 0rem 1rem 1rem 0rem;
+        }
+        h3{
+           color:$text-h2-footer-color;
+            font-family: $times-font-family;
+            font-size: 2rem;
+            padding: 0rem 0rem 1.5rem 0rem;
+        }
+        .follow-us-footer{
+            width: 50rem;
+            p {
+                color: $text-p-btn-footer-color;
+            }
+        }
+        form {
+            padding: 2rem 0rem;
+            h3{
+                color: #000000;
+            }
+            button, input{
+                width: 100%;
+                height: 4rem;
+            }
+            button{
+                border: none;
+                background-color: $text-p-btn-footer-color;
+                color: white;
+                margin-top: 2rem;
+            }
+        }
+    }
+}

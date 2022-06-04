@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  background-color: rgb(246, 246, 246);
+  text-align: center;
+}
+
+.wraper{
+  width: 360px;
+  height: 420px;
+}
+
+#title{
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#board {
+  margin: 0;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.tile{
+  /* Box */
+  border: 2px solid lightgrey;
+  width: 60px;
+  height: 60px;
+  margin: 2.5px;
+
+  /* Text */
+  color:black;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active{
+  border-color:red;
+}
+
+.noActive{
+  background-color:rgb(169, 169, 169);
+  border-color: rgb(140, 140, 140);
+}
+
+.correct{
+  background-color:green;
+  color: white;
+  border-color: white;
+}
+
+.present{
+  background-color: #C9B458;
+  color:white;
+  border-color: white;
+}
+
+.absent{
+  background-color:#787C78;
+  color:white;
+  border-color:white;
+}
+
+.btn-reset-check{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn{
+  color: black;
+  background-color: #a1a1a1;
+  font-size: 20px;
+  padding: 10px 30px;
+  margin-top: 10px;
+}

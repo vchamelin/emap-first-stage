@@ -1,0 +1,185 @@
+.tm-sidebar, .tm-content-box {
+    box-shadow: 0px 0px 12px 0px rgba(61, 55, 61, 0.7);
+}
+.tm-banner{
+    background-color: #f5f5f5;
+}
+.tm-banner-inner{
+    background-color: #fff;
+}
+
+.tm-main-nav li:hover, .tm-main-nav a:hover{
+    color: #fff;
+    background-color: #87CEFA;
+}
+
+.flex-2-col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-blue{
+    color:#87CEFA;
+}
+
+#main p::first-letter{
+    font-size: 2em;
+}
+
+.section-title{
+    color:#87CEFA;
+    font-weight: bold;
+}
+
+.tm-team-description-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-item img{
+    height: 100%;
+    width: 720px;
+}
+
+section::before {
+    content: "";
+    border-left: 250px solid #87CEFA;
+    border-bottom: 30px solid transparent;
+    border-top: transparent;
+}
+
+.tm-box-bg-title:hover{
+    color: white;
+    background-color:#87CEFA;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.padding-medium{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#we-are ol{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.padding-medium a, .box a {
+    color:#87CEFA;
+}
+
+#our-work .tm-content-box {
+    box-shadow: none;
+}
+
+#our-work{
+    box-shadow: 0px 0px 12px 0px rgba(61, 55, 61, 0.7);
+}
+
+#our-work .padding-medium :nth-child(2), .content p{
+    font-style: italic;
+}
+#our-work .padding-medium :nth-child(3){
+    font-weight: bold;
+}
+
+.content h2{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 0px 0px 0px;
+}
+
+.gallery-container .box-work{
+    padding: 0px 20px 20px 20px;
+}
+
+#our-work .gallery-container li { 
+    display: flex; 
+    flex-direction: column; 
+} 
+#our-work .gallery-container .link { 
+    margin-top: auto; 
+    cursor: pointer; 
+} 
+
+.carousel-content .flex-item p{
+    color:  gainsboro;
+}
+.carousel-content .flex-item h2 {
+    color:  gainsboro;
+    letter-spacing: 5px;
+}
+
+.mandatory-field::after {
+    content: "*";
+    color: red;
+    font-weight:bold;
+} 
+
+.contact-form button {
+    position: relative;
+    left:79% ;
+    background-color: transparent !important;
+    border-width: 2px 2px 2px 2px !important;
+    resize: none;
+    border-radius: 4px !important;
+    border-color: #87CEFA !important;
+    color: #87CEFA !important;
+}
+
+.contact-form button:hover {
+    background-color: #87CEFA !important;
+    color: #fff !important;
+}
+
+@media print {
+    #home {
+        margin-bottom: 0px;
+    }
+    .tm-content-box{
+        display: block;
+    }
+    .container{
+        max-width: 800px;
+    }
+    #main h2{
+        color: blue;
+    }
+    .flex-item p, .flex-item span{  
+        color: black;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;        
+    }
+    #main p::first-letter{
+        font-size: 2em;
+    }
+    .tm-team-description-container{
+        max-width: 100%;
+        margin-bottom: 0;
+        line-height: 160%;
+    }
+
+    #main .tm-section-description{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .tm-sidebar, #about, #we-are, #our-work, #ideas, #forms{
+        display: none;
+    }
+    section::before {
+        content: "";
+        border-left: 0px solid #87CEFA;
+    }
+}

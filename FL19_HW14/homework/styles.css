@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  font-size: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1f39ff36;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 2rem;
+}
+
+.search-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+#search-input{
+  width: 50%;
+  padding: 1rem 2.5rem;
+  border: 0rem solid;
+  border-radius: 1rem;
+}
+
+#search-btn, .load-more{
+  padding: 0 2rem;
+  cursor: pointer;
+  background-color: gold;
+  border: 0rem solid;
+  border-radius: 1rem;
+}
+
+#characters-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 100%;
+  gap: 0.5vw;
+}
+
+.character-card{
+  width: 19vw;
+  border: 0.1rem solid gold;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.character-img{
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.character-name, .character-status{
+  justify-content: center;
+  font-size: large;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+
+.character-name{
+  font-weight: 900;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  margin: 1rem 3rem;
+}
+
+.character-status{
+  border-radius: 1rem;
+  display: flex;
+  justify-content: start;
+}
+
+.Alive, .Dead, .unknown{
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+}
+
+.Alive{
+  background-color: greenyellow;
+}
+
+.Dead{
+  background-color:orangered;
+}
+
+.unknown{
+  background-color:rgb(146, 146, 146);
+
+}
+
+.load-more{
+  width: 10%;
+  padding: 1rem;
+  align-self: center;
+  margin-top: 1rem;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-delete{
+  background-color: crimson;
+  color: aliceblue;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  cursor: pointer;
+}

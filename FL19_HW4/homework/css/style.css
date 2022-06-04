@@ -1,0 +1,276 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+
+#wrapper{
+    padding: 2rem 5rem;
+}
+
+.logo-img{
+    width: 13rem;
+    height: 3rem;
+    margin-right: 3rem;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+}
+
+
+a {
+    text-decoration:none;
+    margin-right: 1rem;
+    color: #000000;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+#nav button{
+    background: rgb(1, 182, 213);
+    border: none;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+    padding: 1.5rem 6rem;
+    cursor: pointer;
+}
+
+#main-ebo {
+    height: 100% ;
+    width: 80%;
+    background: rgba(196, 196, 196, 0.68);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-ebo img{
+    width: auto;
+    /* height: calc(20rem + 8vw); */
+    transform: translate(10%, 0%);
+    height: 25vw;
+}
+
+.main-text h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(20rem + 4vw);
+    line-height: 351px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.05em;
+    text-transform: lowercase;
+
+    color: #000000;
+}
+
+.main-text h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5.5rem;
+    line-height: 55px;
+    /* or 100% */
+
+    font-variant: small-caps;
+
+    color: #FFFFFF;
+}
+
+.main-text h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 125% */
+
+    text-transform: lowercase;
+
+    color: #FFFFFF;
+}
+
+.main-text{
+    padding: calc(2rem + 4vw);
+
+}
+
+.s-t-text-option img{
+    height: auto;
+    width: 100%;
+}
+
+.s-t-text-option{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6.5rem;
+    grid-row-gap: 5.5rem;
+    margin-top: 11rem;
+}
+
+.s-t-text-option div{
+    padding-left: 10rem;
+}
+
+.s-t-text-option h2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 50px;
+    /* or 104% */
+
+    color: #079FD0;
+}
+
+.s-t-text-option p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    /* or 150% */
+
+    color: #000000;
+
+    padding-top: 4rem;
+}
+
+#what-ebo-can{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#what-ebo-can h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 5rem;
+    color: #079FD0;
+    padding: 10rem;
+}
+
+.what-ebo-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.what-ebo-items div {
+    padding-right: 3.5rem;
+}
+
+.what-ebo-items img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 5rem;
+}
+
+.what-ebo-items div h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    /* or 120% */
+
+
+    color: #079FD0;
+}
+
+.what-ebo-items div p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+    color: #000000;
+    padding-top: 3rem;
+}
+
+.btn-learm-more{
+    cursor: pointer;
+
+    border: none;
+    background: transparent;
+
+    margin-top: 4rem;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    /* identical to box height, or 194% */
+
+    text-transform: uppercase;
+
+    color: #079FD0;
+}
+
+#footer {
+    position: absolute;
+    left: 0rem;
+
+    width: 100%;
+    height: 33rem;
+
+    background: rgba(196, 196, 196, 0.2);
+    margin-top: 6.5rem;
+    padding: 5rem 3rem 8rem  5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer ul {
+    list-style-type: none;
+    align-items: center;
+
+    line-height: 4.5rem;
+}
+
+#footer ul a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 4.5rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+#footer p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+
+    color: #000000;
+}
+
+#footer img{
+    position: relative;
+    top: 2rem
+}
